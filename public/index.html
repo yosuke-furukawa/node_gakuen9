@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+<div id="impress">
+
+<div id="title" class="step" data-y="0" data-x="0">
+<h1>tmlibとYeomanでゲーム量産する話</h1>
+
+</div>
+<div class="step" data-y="0" data-x="1200">
+<h2>Who are you ?</h2>
+
+<p>Yosuke!</p>
+
+<p><img src="https://si0.twimg.com/profile_images/206948941/wall-e.jpg" alt="icon" /></p>
+
+<p>Working at : <a href="http://dena.com/">DeNA</a></p>
+
+<p>Twitter : <a href="https://twitter.com/yosuke_furukawa">@yosuke_furukawa</a></p>
+
+<p>Blog : <a href="http://yosuke-furukawa.hatenablog.com/">from scratch</a></p>
+
+</div>
+<div class="step" data-y="0" data-x="2400">
+<h2>What is tmlib ?</h2>
+
+<p><a href="http://phi1618.github.io/tmlib.js/"><img src="http://phi1618.github.io/tmlib.js/logo.png" style="width:20%; height:20%;" /></a></p>
+
+<ul>
+<li>tmlib stands for "Time is Money library".</li>
+</ul>
+
+</div>
+<div class="step" data-y="0" data-x="3600">
+<h2>A lot of features</h2>
+
+<ul>
+<li>play sounds</li>
+</ul>
+
+<iframe src="http://phi1618.github.io/tmlib.js/examples/piano/index.html" width=500 height=250></iframe>
+
+<ul>
+<li>detect collision and canvas effect</li>
+</ul>
+
+<iframe src="http://phi1618.github.io/tmlib.js/examples/particle/index.html" width=500 heigh=250></iframe>
+
+<ul>
+<li>Support Three.js, tiled map editor, and helpful tools</li>
+</ul>
+
+</div>
+<div class="step" data-y="0" data-x="4800">
+<h2>Tmlib meets socket.io</h2>
+
+<ul>
+<li><a href="http://brogue.testcoding.net/">rogue plus</a> created by <a href="https://twitter.com/omatoro">@omatoro</a></li>
+</ul>
+
+<p><img src="http://testcording.com/wp-content/uploads/2013/06/2013-06-01_16h27_57.png" alt="rogue" /></p>
+
+<iframe src="http://brogue.testcoding.net/" width=300 height=400></iframe>
+
+</div>
+<div class="step" data-y="800" data-x="0">
+<h2>Very helpful tools on development games.</h2>
+
+<ul>
+<li><p>grunt: livereload, jshint, open</p></li>
+<li><p>bower: bootstrap, tmlib.js</p></li>
+<li><p><strong>Yeoman</strong></p></li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="1200">
+<h2>Yeoman</h2>
+
+<p><img src="http://yeoman.io/assets/img/yeoman-logo.png" alt="yeoman" /></p>
+
+<p>yeoman can scaffold application templates.</p>
+
+<p>I created <strong>generetor-tmlib!!</strong></p>
+
+</div>
+<div data-rotate="90" class="step" data-y="800" data-x="2400">
+<h2>Super Fast Demo</h2>
+
+<!-- data-rotate="90" -->
+
+</div>
+<div class="step" data-y="800" data-x="3600">
+<h2>Summary</h2>
+
+<ul>
+<li><strong>tmlib</strong> is great tool.</li>
+<li><strong>Yeoman</strong> can generate your application templates.</li>
+<li>I am creating our own template <strong>generator-tmlib</strong>!!</li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="4800">
+<h2>DeNA NEEDS YOU!!!</h2>
+
+<ul>
+<li><em>JavaScript Engineers</em></li>
+<li><em>Noders</em></li>
+<li><em>Designers</em></li>
+<li><a href="http://dena.com/recruit/">Join us!!!!</a></li>
+</ul>
+
+</div>
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<div style="position: fixed; bottom: 10px; left: 10px; pointer-events: auto;">
+<button type="button" id="sync">Connect</button>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script src="http://www.yosuke-furukawa.info:3000/socket.io/socket.io.js"></script>
+<script src="js/sync_page.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
+
